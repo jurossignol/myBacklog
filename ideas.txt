@@ -1,0 +1,70 @@
+Outil gestion binomage intelligent + backlog
+
+=======================================================
+PARTIE BINOMAGE
+=======================================================
+Calcul binomage intelligent :
+	=> pour un sujet fonctionnel/technique donné, faire la correspondance entre une personne compétente et une personne non compétente
+	=> Ne pas faire binomer des gens qui ont binomé récemment (durant les x derniers binomes des personnes)
+	=> Ne pas faire binomer des gens qui sont en cours de binomage
+	=> Prendre en compte les caractères/affinités des personnes
+	=> Mise en avant de compétence méthodologique (TDD, ...)
+
+Proposer 3 suggestions de binomage (avec % de correspondance)
+	=> une meme personne ne peut apparaitre que dans deux des trois binomages proposés
+
+Proposer un mode manuel pour la formation d'un binome par l'utilisateur
+
+Affichage d'alerte sur les personnes qui ne binome pas ou peu
+	=> alerte sur une personne qui ne binome avec personne
+	=> alerte sur deux personnes qui ne binoment jamais ensemble
+
+
+=======================================================
+PARTIE BACKLOG
+=======================================================
+Calcul ratio vélocité = pcx (fonc + tech) / somme présence jour personne
+
+Pouvoir importer les storys depuis fichier excel :
+	=> pour chaque story, definier des domaines fonctionnels et techniques
+	=> permet le suivi du backlog
+	=> generation du burnup
+
+Création de story manuellement
+
+Création de defect : 
+	=> si possible, chargement automatique depuis QualityCenter
+	=> sinon, création manuelle
+
+Pouvoir importer les jours d'absence depuis fichier excel :
+	=> définir les plages de date des itérations
+	=> permet le calcul de la vélocité prévisionnelle
+
+
+=======================================================
+CONCEPT
+=======================================================
+BINOME
+PERSONNE
+AFFINITE
+DOMAINE FONCTIONNEL
+DOMAINE TECHNIQUE
+DOMAINE METHODOLOGIQUE
+COMPETENCE/NIVEAU
+ITERATION
+STORY FONCTIONNELLE
+STORY TECHNIQUE
+STORY DEFECT
+
+
+Une ITERATION se compose d'une ou plusieurs STORY
+Une STORY peut être de type FONCTIONNEL, TECHNIQUE ou DEFECT
+Une STORY a un ou des DOMAINES FONCTIONNEL pour lesquels il y a des NIVEAUX différents
+Une STORY a un ou des DOMAINES TECHNIQUE pour lesquels il y a des NIVEAUX différents
+Une STORY est affectée à un BINOME ou une PERSONNE
+Un BINOME se compose de deux PERSONNES
+Une PERSONNE a des COMPETENCES sur des DOMAINES FONCTIONNEL
+Une PERSONNE a des COMPETENCES sur des DOMAINES TECHNIQUE
+Une PERSONNE a des COMPETENCES sur des DOMAINES METHODOLOGIQUE
+Une PERSONNE a une ou plusieurs AFFINITES avec une autre PERSONNES
+Une AFFINITES peut être positive ou négative
